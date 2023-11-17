@@ -12,6 +12,7 @@ app.use(
     secret: "anysecretkey",
     resave: false,
     saveUninitialized: false,
+    cookie: { maxAge: 60000 }, //use this if you want to save as cookies with expiry else without this will be saved as session only
   })
 );
 
